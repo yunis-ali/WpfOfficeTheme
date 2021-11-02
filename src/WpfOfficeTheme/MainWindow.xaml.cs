@@ -41,6 +41,12 @@ namespace WpfOfficeTheme
             var accentBrush = TryFindResource("AccentColorBrush") as SolidColorBrush;
             if (accentBrush != null) accentBrush.Color.CreateAccentColors();
         }
+
+        private void Ribbon_Click(object sender, RoutedEventArgs e)
+        {
+            SubWindow sub = new SubWindow();
+            sub.Show();
+        }
     }
 
     public class User
